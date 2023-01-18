@@ -1,0 +1,22 @@
+.background {
+    background: rgb(27, 27, 27);
+}
+
+.card {
+    background: rgb(187, 185, 187);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0px darkviolet; 
+}
+
+.card-body {
+    font-weight: bold;
+    color: black;
+}
+
+div.text-center {
+    color: white;
+}
+
+.btn {
+    margin-bottom: 5px;
+}
