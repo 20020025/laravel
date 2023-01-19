@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Profile</title>
+    <title>Dashboard Profile</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
 
 <body class="background">
@@ -14,7 +16,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Profile') }}</div>
+                <div class="card-header">{{ __('PROFILE') }}</div>
 
                 <div class="card-body">
                     
@@ -28,7 +30,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             @if($user->photo)
-                                <img src="{{ asset('storage/app/public/photos/'.$user->photo) }}" class="img-thumbnail rounded mx-auto d-block">
+                                <img src="{{ asset('storage/photos/'.$user->photo) }}" class="img-thumbnail rounded mx-auto d-block">
                             @else
                                 <img src="{{ asset('img/profile.png') }}" class="img-thumbnail rounded mx-auto d-block">
                             @endif
@@ -113,14 +115,16 @@
 
                                 <div class="row mb-0">
                                     <div class="col-md-6 offset-md-4">
-                                        <button type="submit" class="btn btn-primary">
+                                        <button type="submit" class="btn btn-secondary">
                                             {{ __('Update Profile') }}
                                         </button>
                                     </div>
                                 </div>
 
-                                <div class="mt-2">
-                                    <a href="{{ route('buku.index') }}">BACK</a>
+                                <div class="row mb-0">
+                                    <div class="col-md-6 offset-md-4">
+                                        <a href="{{ route('buku.index') }}">BACK</a>
+                                    </div>
                                 </div>
                             </form>
 

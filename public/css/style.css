@@ -2,10 +2,20 @@
     background: rgb(27, 27, 27);
 }
 
+.card-header {
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
 .card {
     background: rgb(187, 185, 187);
     border-radius: 10px;
     box-shadow: 5px 5px 10px 0px darkviolet; 
+}
+
+.list-group-item {
+    color: black;
 }
 
 .card-body {
